@@ -1,0 +1,66 @@
+{
+  "musicfilesApp": {
+    "audiofile": {
+      "home": {
+        "title": "Audiofiles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Audiofile",
+        "createOrEditLabel": "Create or edit a Audiofile",
+        "notFound": "No Audiofiles found"
+      },
+      "created": "A new Audiofile is created with identifier {{ param }}",
+      "updated": "A Audiofile is updated with identifier {{ param }}",
+      "deleted": "A Audiofile is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Audiofile {{ id }}?"
+      },
+      "detail": {
+        "title": "Audiofile"
+      },
+      "id": "ID",
+      "artist": "Artist",
+      "album": "Album",
+      "comment": "Comment",
+      "genre": "Genre",
+      "title": "Title",
+      "track": "Track",
+      "total": "Total",
+      "year": "Year",
+      "fieldname": "Fieldname",
+      "bitrate": "Bitrate",
+      "bitspersample": "Bitspersample",
+      "codec": "Codec",
+      "covermimetype": "Covermimetype",
+      "coversize": "Coversize",
+      "covertype": "Covertype",
+      "coverheight": "Coverheight",
+      "coverwidth": "Coverwidth",
+      "covers": "Covers",
+      "lengthseconds": "Lengthseconds",
+      "mode": "Mode",
+      "samplerate": "Samplerate",
+      "tool": "Tool",
+      "vbr": "Vbr",
+      "directory": "Directory",
+      "extension": "Extension",
+      "filename": "Filename",
+      "filenameext": "Filenameext",
+      "filenamerel": "Filenamerel",
+      "folderpath": "Folderpath",
+      "folderpathrel": "Folderpathrel",
+      "parentdirectory": "Parentdirectory",
+      "path": "Path",
+      "volume": "Volume",
+      "workingdir": "Workingdir",
+      "workingpath": "Workingpath",
+      "filecreatedate": "Filecreatedate",
+      "filemoddate": "Filemoddate",
+      "filesizebytes": "Filesizebytes",
+      "crcVal": "Crc Val",
+      "md5Val": "Md 5 Val",
+      "md5audioVal": "Md 5 Audio Val",
+      "appVal": "App Val",
+      "device": "Device"
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "name": "Audiofile",
+  "fields": [
+    {
+      "fieldName": "artist",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "album",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "comment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "track",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "total",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "year",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fieldname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bitrate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bitspersample",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codec",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "covermimetype",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coversize",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "covertype",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coverheight",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coverwidth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "covers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lengthseconds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "samplerate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tool",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vbr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "directory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extension",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "filename",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "filenameext",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "filenamerel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folderpath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folderpathrel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentdirectory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "path",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "volume",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workingdir",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workingpath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "filecreatedate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "filemoddate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "filesizebytes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "crcVal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "md5Val",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "md5audioVal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "appVal",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "device",
+      "otherEntityRelationshipName": "audiofile",
+      "relationshipName": "device"
+    }
+  ],
+  "entityTableName": "audiofile",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["musicfiles"],
+  "changelogDate": "20201229000337"
+}

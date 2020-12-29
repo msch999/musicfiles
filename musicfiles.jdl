@@ -1,0 +1,64 @@
+application {
+  config {
+    baseName musicfiles,
+    applicationType monolith,
+    packageName de.msch,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    clientFramework vue
+  }
+  entities *
+}
+
+entity Audiofile {
+  artist String required
+  album String
+  comment String
+  genre String
+  title String required 
+  track String
+  total String
+  year String
+  fieldname String
+  bitrate String
+  bitspersample String
+  codec String
+  covermimetype String
+  coversize String
+  covertype String
+  coverheight String
+  coverwidth String
+  covers String
+  lengthseconds String
+  mode String
+  samplerate String
+  tool String
+  vbr String
+  directory String
+  extension String
+  filename String
+  filenameext String
+  filenamerel String
+  folderpath String
+  folderpathrel String
+  parentdirectory String
+  path String
+  volume String
+  workingdir String
+  workingpath String
+  filecreatedate String
+  filemoddate String
+  filesizebytes String
+  crcVal String
+  md5Val String
+  md5audioVal String
+  appVal String
+}
+
+entity Device {
+  name String required
+}
+
+relationship OneToMany {
+  Device to Audiofile
+}

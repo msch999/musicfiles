@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Audiofile.
+    -->
+    <changeSet id="20201229000337-1" author="jhipster">
+        <createTable tableName="audiofile">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="artist" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="album" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="comment" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="genre" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="track" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="total" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="year" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fieldname" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bitrate" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bitspersample" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="codec" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="covermimetype" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="coversize" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="covertype" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="coverheight" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="coverwidth" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="covers" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="lengthseconds" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mode" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="samplerate" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tool" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vbr" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="directory" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="extension" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="filename" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="filenameext" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="filenamerel" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folderpath" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folderpathrel" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parentdirectory" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="path" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="volume" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="workingdir" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="workingpath" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="filecreatedate" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="filemoddate" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="filesizebytes" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="crc_val" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="md_5_val" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="md_5_audio_val" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="app_val" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="device_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20201229000337-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/audiofile.csv"
+                  separator=";"
+                  tableName="audiofile">
+            <column name="id" type="numeric"/>
+            <column name="artist" type="string"/>
+            <column name="album" type="string"/>
+            <column name="comment" type="string"/>
+            <column name="genre" type="string"/>
+            <column name="title" type="string"/>
+            <column name="track" type="string"/>
+            <column name="total" type="string"/>
+            <column name="year" type="string"/>
+            <column name="fieldname" type="string"/>
+            <column name="bitrate" type="string"/>
+            <column name="bitspersample" type="string"/>
+            <column name="codec" type="string"/>
+            <column name="covermimetype" type="string"/>
+            <column name="coversize" type="string"/>
+            <column name="covertype" type="string"/>
+            <column name="coverheight" type="string"/>
+            <column name="coverwidth" type="string"/>
+            <column name="covers" type="string"/>
+            <column name="lengthseconds" type="string"/>
+            <column name="mode" type="string"/>
+            <column name="samplerate" type="string"/>
+            <column name="tool" type="string"/>
+            <column name="vbr" type="string"/>
+            <column name="directory" type="string"/>
+            <column name="extension" type="string"/>
+            <column name="filename" type="string"/>
+            <column name="filenameext" type="string"/>
+            <column name="filenamerel" type="string"/>
+            <column name="folderpath" type="string"/>
+            <column name="folderpathrel" type="string"/>
+            <column name="parentdirectory" type="string"/>
+            <column name="path" type="string"/>
+            <column name="volume" type="string"/>
+            <column name="workingdir" type="string"/>
+            <column name="workingpath" type="string"/>
+            <column name="filecreatedate" type="string"/>
+            <column name="filemoddate" type="string"/>
+            <column name="filesizebytes" type="string"/>
+            <column name="crc_val" type="string"/>
+            <column name="md_5_val" type="string"/>
+            <column name="md_5_audio_val" type="string"/>
+            <column name="app_val" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>
